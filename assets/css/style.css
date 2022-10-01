@@ -45,6 +45,11 @@ body {
   padding: 0.813rem 2.188rem;
   border-radius: 6.438rem;
 }
+.hamburger-link{
+  display: none;
+  width: 2.125rem;
+  text-decoration: none;
+}
 .hero-section {
   display: flex;
   margin-top: 4rem;
@@ -57,6 +62,7 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 700;
   margin-bottom: 0;
+  width: 29.9rem;
 }
 .write-up p {
   width: 33rem;
@@ -109,6 +115,9 @@ body {
 }
 .card > img {
   height: 8.063rem;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
 }
 .card h3 {
   font-size: 1.5rem;
@@ -125,4 +134,137 @@ body {
   display: inline-block;
   margin-left: 1rem;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1332px) {
+  .write-up {
+    width: 50%;
+  }
+  .illustrator {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .write-up h1 {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1098px) {
+  .write-up h1 {
+    font-size: 3.5rem;
+    width: 26rem;
+  }
+  .write-up p {
+    width: 30rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1041px) {
+  .write-up p {
+    width: 30rem;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 955px) {
+   /* utility designs */
+.initial-padding {
+  padding: 3rem 3rem;
+}
+  .write-up h1 {
+    font-size: 3.35rem;
+    width: 25rem;
+  } 
+}
+@media screen and (max-width: 938px) {
+ 
+  .nav-link .links {
+    display: none;
+  }
+  .hamburger-link{
+    display: unset;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .write-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .write-up h1 {
+    width: 100%;
+  }
+  .write-up p {
+    width: 100%;
+  }
+  .illustrator {
+    width: 100%;
+  }
+
+  
+  /* what we do section */
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width:70%;
+    margin-bottom: 2rem;
+  }
+
+}
+@media screen and (max-width: 606px) {
+  /* what we do section */
+  .card {
+    width:80%;
+  }
+}
+@media screen and (max-width: 559px) {
+  .header {
+    padding: 2rem 3rem 3rem;
+  }
+  .write-up h1 {
+    font-size: 3rem;
+    width: 100%;
+  } 
+  .write-up p {
+    font-size: 1.5rem;
+  }
+  .what-we-do h2 {
+    font-size: 3rem;
+  }
+  /* what we do section */
+  .card {
+    width:100%;
+  }
+}
+@media screen and (max-width: 473px) {
+.header {
+  padding: 2rem 2rem 3rem;
+}
+  /* what we do section */
+  .card {
+    width:100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .write-up .cta {
+    padding: 1rem 2rem;
+  }
+  .what-we-do h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 305px) {
+  .header {
+    padding: 2rem 1rem 3rem;
+  }
+    /* utility designs */
+.initial-padding {
+  padding: 2rem 1rem;
+}
+  
 }
