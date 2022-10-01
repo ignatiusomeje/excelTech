@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+/* utility designs */
+.initial-padding {
+  padding: 7rem 5rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: white;
+  padding: 2rem 5rem 3rem;
+}
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #561d5e;
+  font-weight: 500;
+}
+.nav-link .brand {
+  display: inline;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "lato", sans-serif;
+}
+.nav-link .brand,
+.nav-link .links .link a {
+  text-decoration: none;
+  color: #561d5e;
+}
+.nav-link .links {
+  display: flex;
+}
+.nav-link .links .link {
+  list-style: none;
+  margin: 0 1rem;
+}
+.nav-link .links .link:last-of-type a {
+  background-color: #561d5e;
+  color: white;
+  padding: 0.813rem 2.188rem;
+  border-radius: 6.438rem;
+}
+.hero-section {
+  display: flex;
+  margin-top: 4rem;
+}
+.write-up {
+  width: 40%;
+}
+.write-up h1 {
+  font-size: 4rem;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.write-up p {
+  width: 33rem;
+  font-size: 2.15rem;
+  color: #561d5e;
+}
+.write-up .cta {
+  background-color: #561d5e;
+  padding: 1.563rem 3.688rem;
+  border-radius: 12.739rem;
+  color: white;
+  font-size: 1.979rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.illustrator {
+  width: 60%;
+}
+.illustrator img {
+  width: 100%;
+}
+
+/* what we do section */
+.what-we-do {
+  background-image: url("./../images/BG\ IMAGE.svg");
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+}
+.what-we-do h2 {
+  color: #000;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 0;
+}
+.card-section {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 30%;
+  background-color: white;
+  border-radius: 0.938rem;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.card > img {
+  height: 8.063rem;
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #561d5e;
+}
+.card a {
+  text-decoration: none;
+  color: #561d5e;
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+.card a img {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
