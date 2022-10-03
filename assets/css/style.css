@@ -20,6 +20,7 @@ body {
   align-items: center;
   color: #561d5e;
   font-weight: 500;
+  background-color: white;
 }
 .nav-link .brand {
   display: inline;
@@ -69,7 +70,8 @@ body {
   font-size: 2.15rem;
   color: #561d5e;
 }
-.write-up .cta {
+
+ .cta {
   background-color: #561d5e;
   padding: 1.563rem 3.688rem;
   border-radius: 12.739rem;
@@ -201,6 +203,47 @@ body {
   font-size: 1.5rem;
 }
 
+
+/* THE ABOUT PAGE STYLING */
+.header-about .nav-link{
+  padding: 2rem 5rem 1rem;
+}
+.about-hero-section{
+  background: url(./../images/bg\ image\ for\ hero.svg)
+  ;
+  width: 100%;
+  height: 39.69rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-write-up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.about-write-up h1{
+  font-size: 4rem;
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  color: #561D5E;
+  margin-bottom: 0;
+}
+.about-write-up p{
+  width: 80%;
+  line-height: 19px;
+  margin-bottom: 2rem;
+}
+.about-write-up h1, .about-write-up p{
+  text-align: center;
+}
+
 /* MEDIA QUERY SECTION */
 
 @media screen and (max-width: 1332px) {
@@ -209,6 +252,9 @@ body {
   }
   .illustrator {
     width: 50%;
+  }
+  .about-write-up{
+    width: 100%;
   }
 }
 @media screen and (max-width: 1115px) {
@@ -230,6 +276,9 @@ body {
   .write-up p {
     width: 30rem;
     font-size: 1.7rem;
+  }
+  .about-write-up{
+    width: 60%;
   }
 }
 @media screen and (max-width: 955px) {
@@ -287,11 +336,17 @@ body {
   width: 100%;
   margin:1rem 0 ;
 }
+.about-write-up{
+  width: 80%;
+}
 }
 @media screen and (max-width: 606px) {
   /* what we do section */
   .card {
     width: 80%;
+  }
+  .about-write-up{
+    width: 100%;
   }
 }
 @media screen and (max-width: 559px) {
@@ -316,6 +371,12 @@ body {
 .footer{
   padding: 2rem ;
 }
+.about-write-up h1{
+    font-size: 3rem;
+  }
+  .header-about .nav-link{
+    padding: 2rem 3rem 1rem;
+  }
 }
 @media screen and (max-width: 473px) {
   .header {
@@ -325,9 +386,12 @@ body {
   .card {
     width: 100%;
   }
+  .about-write-up h1{
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 360px) {
-  .write-up .cta {
+  .cta {
     padding: 1rem 2rem;
   }
   .what-we-do h2 {
@@ -345,6 +409,9 @@ body {
   .footer > p{
     font-size: 1.2rem;
   }
+  .header-about .nav-link{
+    padding: 2rem 2rem 1rem;
+  }
 }
 @media screen and (max-width: 305px) {
   .header {
@@ -353,6 +420,9 @@ body {
   /* utility designs */
   .initial-padding {
     padding: 2rem 1rem;
+  }
+  .header-about .nav-link{
+    padding: 2rem 1rem 1rem;
   }
   
 }
