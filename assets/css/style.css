@@ -71,7 +71,7 @@ body {
   color: #561d5e;
 }
 
- .cta {
+.cta {
   background-color: #561d5e;
   padding: 1.563rem 3.688rem;
   border-radius: 12.739rem;
@@ -156,61 +156,59 @@ body {
   padding: 0 2rem 2rem;
 }
 /* footer section */
-.footer{
-  background-color: #561D5E;
+.footer {
+  background-color: #561d5e;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem ;
+  padding: 5rem;
 }
-.footer .brand{
+.footer .brand {
   font-size: 5rem;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
 }
 
-.footer .footer-link{
-  background-color: #561D5E;
+.footer .footer-link {
+  background-color: #561d5e;
   display: flex;
   width: 43.94rem;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
-.footer .footer-link li{
+.footer .footer-link li {
   list-style: none;
   font-size: 2.25rem;
   line-height: 42.19px;
 }
-.footer a{
+.footer a {
   text-decoration: none;
   color: #fff;
 }
-.icons{
+.icons {
   width: 15.75rem;
   display: flex;
   justify-content: space-between;
-
 }
-.icons a img{
+.icons a img {
   display: inline-block;
 }
-.location{
+.location {
   display: flex;
   font-size: 2.25rem;
 }
-.footer > p{
+.footer > p {
   font-size: 1.5rem;
 }
 
-
 /* THE ABOUT PAGE STYLING */
-.header-about .nav-link{
+.header-about .nav-link,
+.header-contact .nav-link {
   padding: 2rem 5rem 1rem;
 }
-.about-hero-section{
-  background: url(./../images/bg\ image\ for\ hero.svg)
-  ;
+.about-hero-section {
+  background: url(./../images/bg\ image\ for\ hero.svg);
   width: 100%;
   height: 39.69rem;
   background-repeat: no-repeat;
@@ -221,27 +219,47 @@ body {
   justify-content: center;
   align-items: center;
 }
-.about-write-up{
+.about-write-up,
+.contact-write-up {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
 }
-.about-write-up h1{
+.about-write-up h1,
+.contact-write-up h1 {
   font-size: 4rem;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 700;
-  color: #561D5E;
+  color: #561d5e;
   margin-bottom: 0;
 }
-.about-write-up p{
+.about-write-up p,
+.contact-write-up p {
   width: 80%;
   line-height: 19px;
   margin-bottom: 2rem;
 }
-.about-write-up h1, .about-write-up p{
+.about-write-up h1,
+.about-write-up p,
+.contact-write-up h1,
+.contact-write-up p {
   text-align: center;
+}
+
+/* CONTACT PAGE STYLING */
+.contact-hero-section {
+  background: url(./../images/bg\ image\ for\ hero\ contact.svg);
+  width: 100%;
+  height: 39.69rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MEDIA QUERY SECTION */
@@ -253,7 +271,8 @@ body {
   .illustrator {
     width: 50%;
   }
-  .about-write-up{
+  .about-write-up,
+  .contact-write-up {
     width: 100%;
   }
 }
@@ -277,7 +296,8 @@ body {
     width: 30rem;
     font-size: 1.7rem;
   }
-  .about-write-up{
+  .about-write-up,
+  .contact-write-up {
     width: 60%;
   }
 }
@@ -328,24 +348,36 @@ body {
     width: 70%;
     margin-bottom: 2rem;
   }
-.footer .footer-link{
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 15rem;
-  width: 100%;
-  margin:1rem 0 ;
-}
-.about-write-up{
-  width: 80%;
-}
+  .footer .footer-link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .about-write-up,
+  .contact-write-up {
+    width: 80%;
+  }
+  .about-hero-section {
+    background: url(./../images/bg\ image\ for\ hero\ -\ about.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contact-hero-section {
+    background: url(./../images/bg\ image\ for\ hero-android-contact\ .svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media screen and (max-width: 606px) {
   /* what we do section */
   .card {
     width: 80%;
   }
-  .about-write-up{
+  .about-write-up,
+  .contact-write-up {
     width: 100%;
   }
 }
@@ -368,13 +400,15 @@ body {
     width: 100%;
   }
   /* footer section */
-.footer{
-  padding: 2rem ;
-}
-.about-write-up h1{
+  .footer {
+    padding: 2rem;
+  }
+  .about-write-up h1,
+  .contact-write-up h1 {
     font-size: 3rem;
   }
-  .header-about .nav-link{
+  .header-about .nav-link,
+  .header-contact .nav-link {
     padding: 2rem 3rem 1rem;
   }
 }
@@ -386,7 +420,8 @@ body {
   .card {
     width: 100%;
   }
-  .about-write-up h1{
+  .about-write-up h1,
+  .contact-write-up h1 {
     font-size: 2.5rem;
   }
 }
@@ -397,19 +432,20 @@ body {
   .what-we-do h2 {
     font-size: 2rem;
   }
-  .footer .brand{
+  .footer .brand {
     font-size: 3rem;
   }
-  .footer .footer-link li{
+  .footer .footer-link li {
     font-size: 1.5rem;
   }
-  .location{
+  .location {
     font-size: 1.3rem;
   }
-  .footer > p{
+  .footer > p {
     font-size: 1.2rem;
   }
-  .header-about .nav-link{
+  .header-about .nav-link,
+  .header-contact .nav-link {
     padding: 2rem 2rem 1rem;
   }
 }
@@ -421,8 +457,8 @@ body {
   .initial-padding {
     padding: 2rem 1rem;
   }
-  .header-about .nav-link{
+  .header-about .nav-link,
+  .header-contact .nav-link {
     padding: 2rem 1rem 1rem;
   }
-  
 }
