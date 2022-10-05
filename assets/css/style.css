@@ -261,6 +261,78 @@ body {
   justify-content: center;
   align-items: center;
 }
+.contact-form {
+  background: url("./../images/BG\ IMAGE.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.contact-writeup {
+  width: 50%;
+  text-align: center;
+  padding: 0 1rem;
+}
+.contact-writeup h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "lato", sans-serif;
+}
+.contact-writeup p {
+  font-size: 1.5rem;
+}
+.contact-writeup .icons {
+  margin: auto;
+}
+.contact-writeup .location {
+  color: #561d5e;
+  font-weight: 500;
+  justify-content: center;
+}
+.form {
+  width: 50%;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.form .form-element label {
+  font-size: 1.125rem;
+  text-indent: 0.5rem;
+}
+.form .form-element input,
+.form .form-element textarea {
+  border-radius: 10px;
+  padding: 1.125rem 0.69rem;
+  background-color: transparent;
+}
+.form .form-element textarea {
+  resize: none;
+}
+
+.form form a {
+  border-radius: 6.44rem;
+  background-color: #561d5e;
+  color: white;
+  text-decoration: none;
+  padding: 13px 50px;
+  display: inline-block;
+  margin: 2.125rem 0;
+}
+.form .form-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.form .form-wrapper .form-element {
+  width: 49%;
+}
 
 /* MEDIA QUERY SECTION */
 
@@ -370,6 +442,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-writeup {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 606px) {
   /* what we do section */
@@ -424,6 +505,15 @@ body {
   .contact-write-up h1 {
     font-size: 2.5rem;
   }
+  .form .form-wrapper {
+    flex-direction: column;
+  }
+  .form .form-wrapper .form-element {
+    width: 100%;
+  }
+  .contact-form.initial-padding {
+    padding: 2rem 1rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .cta {
@@ -460,5 +550,8 @@ body {
   .header-about .nav-link,
   .header-contact .nav-link {
     padding: 2rem 1rem 1rem;
+  }
+  .contact-writeup {
+    padding: unset;
   }
 }
