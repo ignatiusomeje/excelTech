@@ -14,6 +14,7 @@ body {
   background-color: white;
   padding: 2rem 5rem 3rem;
 }
+
 .nav-link {
   display: flex;
   justify-content: space-between;
@@ -21,6 +22,11 @@ body {
   color: #561d5e;
   font-weight: 500;
   background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .nav-link .brand {
   display: inline;
@@ -50,6 +56,56 @@ body {
   display: none;
   width: 2.125rem;
   text-decoration: none;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+li:hover,
+li:hover a {
+  color: gold;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.hamburger-link-mobile {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: 50%;
+}
+.hamburger-link-mobile .links {
+  display: flex;
+  flex-direction: column;
+  background-color: #561d5e;
+  border-radius: 10px;
+  width: 50%;
+  height: 14.38rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-left: auto;
+}
+
+.header-about .hamburger-link-mobile,
+.header-contact .hamburger-link-mobile,
+.header .hamburger-link-mobile {
+  margin-right: 5rem;
+}
+.hamburger-link-mobile .links .link {
+  list-style: none;
+}
+.hamburger-link-mobile .links .link a {
+  text-decoration: none;
+  color: #fff;
+}
+.show {
+  display: unset;
+  transition: all 2s;
+}
+.hide {
+  display: none;
+  transition: all 2s;
 }
 .hero-section {
   display: flex;
@@ -204,7 +260,8 @@ body {
 
 /* THE ABOUT PAGE STYLING */
 .header-about .nav-link,
-.header-contact .nav-link {
+.header-contact .nav-link,
+.header .nav-link {
   padding: 2rem 5rem 1rem;
 }
 .about-hero-section {
@@ -451,12 +508,16 @@ body {
   .form {
     width: 100%;
   }
+  .hamburger-link-mobile {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 606px) {
   /* what we do section */
   .card {
     width: 80%;
   }
+
   .about-write-up,
   .contact-write-up {
     width: 100%;
@@ -489,8 +550,17 @@ body {
     font-size: 3rem;
   }
   .header-about .nav-link,
-  .header-contact .nav-link {
+  .header-contact .nav-link,
+  .header .nav-link {
     padding: 2rem 3rem 1rem;
+  }
+  .header-about .hamburger-link-mobile,
+  .header-contact .hamburger-link-mobile,
+  .header .hamburger-link-mobile {
+    margin-right: 3rem;
+  }
+  .hamburger-link-mobile .links {
+    width: 80%;
   }
 }
 @media screen and (max-width: 473px) {
@@ -535,8 +605,20 @@ body {
     font-size: 1.2rem;
   }
   .header-about .nav-link,
-  .header-contact .nav-link {
+  .header-contact .nav-link,
+  .header .nav-link {
     padding: 2rem 2rem 1rem;
+  }
+  .hamburger-link-mobile {
+    width: 90%;
+  }
+  .header-about .hamburger-link-mobile,
+  .header-contact .hamburger-link-mobile,
+  .header .hamburger-link-mobile {
+    margin-right: 1rem;
+  }
+  .hamburger-link-mobile .links {
+    width: 100%;
   }
 }
 @media screen and (max-width: 305px) {
@@ -548,7 +630,8 @@ body {
     padding: 2rem 1rem;
   }
   .header-about .nav-link,
-  .header-contact .nav-link {
+  .header-contact .nav-link,
+  .header .nav-link {
     padding: 2rem 1rem 1rem;
   }
   .contact-writeup {
