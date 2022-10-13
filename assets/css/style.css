@@ -319,7 +319,7 @@ li:hover a {
   align-items: center;
 }
 .contact-form {
-  background: url("./../images/BG\ IMAGE.svg");
+  background: linear-gradient(rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.5)), url("./../images/BG\ IMAGE.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
